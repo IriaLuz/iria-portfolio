@@ -25,7 +25,7 @@ const navbarData = navbarQueryResponse.contentfulNavbar
                         {navbarData.links.map((link)=>
                             <Nav.Link href={link.slug==="home"?"/":link.slug}>{link.name}</Nav.Link>
                         )}
-                        <Nav.Link href="https://thegoldenshoe-irialuz.netlify.app/">The Golden Shoe</Nav.Link>
+                        <Nav.Link href="https://thegoldenshoe-irialuz.netlify.app/">TGS</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
