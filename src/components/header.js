@@ -16,7 +16,6 @@ query navBar {
   }  
 `)
 const navbarData = navbarQueryResponse.contentfulNavbar
-console.log(navbarData)
     return (
             <Navbar bg="dark" variant="dark">
                 <Container>
@@ -26,6 +25,7 @@ console.log(navbarData)
                         {navbarData.links.map((link)=>
                             <Nav.Link href={link.slug==="home"?"/":link.slug}>{link.name}</Nav.Link>
                         )}
+                        <Nav.Link href="https://thegoldenshoe-irialuz.netlify.app/">The Golden Shoe</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

@@ -33,7 +33,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
     `)
 
     res.data.allContentfulPage.edges.forEach((edge) => {
-        console.log(edge)
         createPage ({
             component: portfolioTemplate,
             path: `/${edge.node.slug}`,

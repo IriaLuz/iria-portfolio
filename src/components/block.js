@@ -10,8 +10,6 @@ function Block({blockData, isImageLeft}) {
 
   const [showModal, setShowModal] = useState(false);
 
-console.log("Block Data is: ", blockData)
-  console.log(blockData)
   const image = getImage(blockData.image.gatsbyImageData)
     const contentBody = blockData.cardBody.cardBody;
    const blockImage = <GatsbyImage  className="card-block-image" alt="blockImage" image={image} />
